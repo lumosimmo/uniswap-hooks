@@ -3,8 +3,8 @@
 
 pragma solidity ^0.8.24;
 
-import {BaseHook} from "src/base/BaseHook.sol";
-import {CurrencySettler} from "src/utils/CurrencySettler.sol";
+import {BaseHook} from "../base/BaseHook.sol";
+import {CurrencySettler} from "../utils/CurrencySettler.sol";
 import {Hooks} from "v4-core/src/libraries/Hooks.sol";
 import {PoolKey} from "v4-core/src/types/PoolKey.sol";
 import {IPoolManager} from "v4-core/src/interfaces/IPoolManager.sol";
@@ -13,7 +13,7 @@ import {Currency, CurrencyLibrary} from "v4-core/src/types/Currency.sol";
 import {BalanceDelta} from "v4-core/src/types/BalanceDelta.sol";
 import {StateLibrary} from "v4-core/src/libraries/StateLibrary.sol";
 import {PoolId} from "v4-core/src/types/PoolId.sol";
-import {IHookEvents} from "src/interfaces/IHookEvents.sol";
+import {IHookEvents} from "../interfaces/IHookEvents.sol";
 import {SwapParams, ModifyLiquidityParams} from "v4-core/src/types/PoolOperation.sol";
 
 /**

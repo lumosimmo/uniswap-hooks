@@ -3,7 +3,7 @@
 
 pragma solidity ^0.8.24;
 
-import {BaseHook} from "src/base/BaseHook.sol";
+import {BaseHook} from "../base/BaseHook.sol";
 import {Pool} from "v4-core/src/libraries/Pool.sol";
 import {BalanceDelta, BalanceDeltaLibrary, toBalanceDelta} from "v4-core/src/types/BalanceDelta.sol";
 import {IPoolManager} from "v4-core/src/interfaces/IPoolManager.sol";
@@ -14,7 +14,7 @@ import {PoolKey} from "v4-core/src/types/PoolKey.sol";
 import {Hooks} from "v4-core/src/libraries/Hooks.sol";
 import {PoolId} from "v4-core/src/types/PoolId.sol";
 import {FullMath} from "v4-core/src/libraries/FullMath.sol";
-import {CurrencySettler} from "src/utils/CurrencySettler.sol";
+import {CurrencySettler} from "../utils/CurrencySettler.sol";
 import {Currency} from "v4-core/src/types/Currency.sol";
 import {SwapParams, ModifyLiquidityParams} from "v4-core/src/types/PoolOperation.sol";
 
