@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-import "src/fee/BaseDynamicAfterFee.sol";
+import "../../src/fee/BaseDynamicAfterFee.sol";
 import {SwapParams} from "v4-core/src/types/PoolOperation.sol";
 
 contract BaseDynamicAfterFeeMock is BaseDynamicAfterFee {

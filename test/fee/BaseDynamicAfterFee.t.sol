@@ -3,8 +3,8 @@ pragma solidity ^0.8.26;
 
 import "forge-std/Test.sol";
 import {Deployers} from "v4-core/test/utils/Deployers.sol";
-import {BaseDynamicAfterFee} from "src/fee/BaseDynamicAfterFee.sol";
-import {BaseDynamicAfterFeeMock} from "test/mocks/BaseDynamicAfterFeeMock.sol";
+import {BaseDynamicAfterFee} from "../../src/fee/BaseDynamicAfterFee.sol";
+import {BaseDynamicAfterFeeMock} from "../../test/mocks/BaseDynamicAfterFeeMock.sol";
 import {IHooks} from "v4-core/src/interfaces/IHooks.sol";
 import {Hooks} from "v4-core/src/libraries/Hooks.sol";
 import {PoolSwapTest} from "v4-core/src/test/PoolSwapTest.sol";
@@ -17,7 +17,7 @@ import {SafeCast} from "v4-core/src/libraries/SafeCast.sol";
 import {V4Quoter} from "v4-periphery/src/lens/V4Quoter.sol";
 import {Deploy} from "v4-periphery/test/shared/Deploy.sol";
 import {PoolKey} from "v4-core/src/types/PoolKey.sol";
-import {ERC20} from "openzeppelin/token/ERC20/ERC20.sol";
+import {ERC20} from "../../lib/v4-core/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 import {SwapParams} from "v4-core/src/types/PoolOperation.sol";
 import {CustomRevert} from "v4-core/src/libraries/CustomRevert.sol";
 

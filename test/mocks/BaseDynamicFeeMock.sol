@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-import "src/fee/BaseDynamicFee.sol";
+import "../../src/fee/BaseDynamicFee.sol";
 
 contract BaseDynamicFeeMock is BaseDynamicFee {
     uint24 public fee;

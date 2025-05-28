@@ -3,7 +3,7 @@ pragma solidity ^0.8.26;
 
 import "forge-std/Test.sol";
 import {Deployers} from "v4-core/test/utils/Deployers.sol";
-import {BaseCustomAccountingMock} from "test/mocks/BaseCustomAccountingMock.sol";
+import {BaseCustomAccountingMock} from "../../test/mocks/BaseCustomAccountingMock.sol";
 import {IHooks} from "v4-core/src/interfaces/IHooks.sol";
 import {Hooks} from "v4-core/src/libraries/Hooks.sol";
 import {PoolSwapTest} from "v4-core/src/test/PoolSwapTest.sol";
@@ -11,12 +11,12 @@ import {IPoolManager} from "v4-core/src/interfaces/IPoolManager.sol";
 import {Currency, CurrencyLibrary} from "v4-core/src/types/Currency.sol";
 import {LPFeeLibrary} from "v4-core/src/libraries/LPFeeLibrary.sol";
 import {PoolId} from "v4-core/src/types/PoolId.sol";
-import {BaseCustomAccounting} from "src/base/BaseCustomAccounting.sol";
-import {ERC20} from "openzeppelin/token/ERC20/ERC20.sol";
+import {BaseCustomAccounting} from "../../src/base/BaseCustomAccounting.sol";
+import {ERC20} from "../../lib/v4-core/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 import {StateLibrary} from "v4-core/src/libraries/StateLibrary.sol";
 import {FullMath} from "v4-core/src/libraries/FullMath.sol";
 import {SafeCast} from "v4-core/src/libraries/SafeCast.sol";
-import {BaseCustomAccountingFeeMock} from "test/mocks/BaseCustomAccountingFeeMock.sol";
+import {BaseCustomAccountingFeeMock} from "../../test/mocks/BaseCustomAccountingFeeMock.sol";
 import {SwapParams} from "v4-core/src/types/PoolOperation.sol";
 
 contract BaseCustomAccountingTest is Test, Deployers {

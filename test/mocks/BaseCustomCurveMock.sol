@@ -4,8 +4,8 @@ pragma solidity ^0.8.26;
 import {PoolKey} from "v4-core/src/types/PoolKey.sol";
 import {IPoolManager} from "v4-core/src/interfaces/IPoolManager.sol";
 import {Currency} from "v4-core/src/types/Currency.sol";
-import {BaseCustomCurve} from "src/base/BaseCustomCurve.sol";
-import {ERC20} from "openzeppelin/token/ERC20/ERC20.sol";
+import {BaseCustomCurve} from "../../src/base/BaseCustomCurve.sol";
+import {ERC20} from "../../lib/v4-core/lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 import {BalanceDelta} from "v4-core/src/types/BalanceDelta.sol";
 import {SwapParams} from "v4-core/src/types/PoolOperation.sol";
 
